@@ -5,50 +5,35 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
     tools:context=".MainActivity">
 
-    <!-- Carte pour la question (visible par défaut) -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/flashcard_question_card"
+    <TextView
+        android:id="@+id/flashcard_question"
+        android:background="@drawable/card_background"
+        android:elevation="5dp"
+        android:textColor="#FFFFFF"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        app:cardBackgroundColor="@color/purple_500"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp">
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="Qui est le 44ᵉ président des États-Unis ?"
+        android:textSize="40sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
 
-        <TextView
-            android:id="@+id/flashcard_question_text"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="@string/qui_est_le_44_pr_sident_des_tats_unis"
-            android:textColor="@android:color/white"
-            android:textSize="32sp" />
-
-    </androidx.cardview.widget.CardView>
-
-    <!-- Carte pour la response (invisible par faut) -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/flashcard_answer_card"
+    <TextView
+        android:id="@+id/flashcard_answer"
+        android:textColor="#000000"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:visibility="gone"
-        app:cardBackgroundColor="@android:color/holo_green_light"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp">
-
-        <TextView
-            android:id="@+id/flashcard_answer_text"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="@string/barack_obama"
-            android:textColor="@android:color/black"
-            android:textSize="32sp" />
-
-    </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/answer_background"
+        android:gravity="center"
+        android:text="Barack Obama"
+        android:visibility="invisible"
+        android:textSize="40sp" />
