@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Carte pour la question (visible par défaut) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashcard_question_card"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="@color/purple_500"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/flashcard_question_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/qui_est_le_44_pr_sident_des_tats_unis"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Carte pour la response (invisible par faut) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashcard_answer_card"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@android:color/holo_green_light"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/flashcard_answer_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/barack_obama"
+            android:textColor="@android:color/black"
+            android:textSize="32sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
