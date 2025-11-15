@@ -36,4 +36,6 @@
         android:gravity="center"
         android:text="Barack Obama"
         android:visibility="invisible"
-        android:textSize="40sp" />
+        android:textSize="40sp" />
+
+    </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.naturel.flashcardapp
+package com.example.flashcardapp
 
 import android.os.Bundle
 import android.view.View
