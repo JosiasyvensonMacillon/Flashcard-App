@@ -1,11 +1,16 @@
 package com.example.flashcardapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.flashcardapp.R
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         val flashcard_answer_2 = findViewById<TextView>(R.id.flashcard_answer_2)
         val flashcard_answer_3 = findViewById<TextView>(R.id.flashcard_answer_3)
         val flashcardAnswer4 = findViewById<TextView>(R.id.flashcard_answer_4)
+        val buttonAdd = findViewById<ImageView>(R.id.Addcardactivity)
+
+        buttonAdd.setOnClickListener {
+            val intent = Intent(this, AddcardActivity::class.java)
+            startActivity(intent)
+        }
 
         flashcardAnswer4.setOnClickListener {
             flashcardAnswer4.setBackgroundColor(ContextCompat.getColor(this, R.color.red))

@@ -110,10 +110,9 @@
         android:id="@+id/Addcardactivity"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_below="@id/flashcard_answer_4"
-        android:layout_marginTop="63dp"
         android:layout_marginStart="300dp"
-        android:src="@drawable/icon"
+        android:layout_marginTop="600dp"
         android:clickable="true"
-        android:focusable="true" />
+        android:src="@drawable/icon"
+        tools:ignore="SpeakableTextPresentCheck" />
 </RelativeLayout>
