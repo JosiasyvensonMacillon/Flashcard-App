@@ -17,6 +17,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val question = intent.getStringExtra("question")
+        val answer = intent.getStringExtra("answer")
+        if (question != null && answer != null) {
+            val questionView = findViewById<TextView>(R.id.flashcard_question)
+            val answerView = findViewById<TextView>(R.id.flashcard_answer)
+            questionView.text = question
+            answerView.text = answer
+        }
 
         val flashcardQuestion = findViewById<TextView>(R.id.flashcard_question)
         val flashcardAnswer = findViewById<TextView>(R.id.flashcard_answer)
