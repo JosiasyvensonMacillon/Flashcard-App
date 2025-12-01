@@ -38,4 +38,81 @@
         android:visibility="invisible"
         android:textSize="40sp" />
 
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/flashcard_answer_1"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_question"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Mr Dex"
+        android:textColor="#040AF2"
+        android:textSize="50sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/flashcard_answer_2"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_answer_1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Barak OBAMA"
+        android:textColor="#040AF2"
+        android:textSize="50sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/flashcard_answer_3"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_answer_2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Bill Clinton"
+        android:textColor="#040AF2"
+        android:textSize="50sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/flashcard_answer_4"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_answer_3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Joe Biden"
+        android:textColor="#040AF2"
+        android:textSize="50sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/Addcardactivity"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="600dp"
+        android:clickable="true"
+        android:src="@drawable/icon"
+        tools:ignore="SpeakableTextPresentCheck" />
+</RelativeLayout>
